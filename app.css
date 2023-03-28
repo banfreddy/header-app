@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+}
+
+.navbar a, .navbar .logo{
+    text-decoration: none;
+    color: #f3f4f5;
+    font-family: roboto,sans-serif;
+}
+
+.navbar .logo{
+    font-size: 1.6rem;
+}
+
+.navbar .menu{
+    display: flex;
+    list-style: none;
+}
+
+.navbar .menu li{
+    padding: 0 12px;
+    
+}
+
+.navbar .menu a{
+    transition: all 0.5s;
+}
+
+.navbar .menu  a:hover{
+    background-color: aquamarine;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.herotexte{
+    
+    text-align: center;
+   
+    margin-top: 5%;
+}
+
+.herotexte h1{
+    font-size: 3rem;
+    color: #f3f4f5;
+    font-weight: 600;
+}
+*.herotexte span{
+    font-size: 3rem;
+    color: rgb(253, 209, 218);
+}
+
+.btn{
+    padding: 12px;
+    width: 15%;
+    font-size: 2em;
+    position: absolute;
+    top:50%;
+    left: 42%;
+    background-color: #ff926b;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #f3f4f5;
+}
+
+.btn:hover{
+    box-shadow: 2px 3px 2pc #b2664a ;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+.titre{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+footer{
+    height: 70px;
+    background-color:#15182e;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
